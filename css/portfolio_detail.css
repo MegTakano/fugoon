@@ -20,4 +20,19 @@
 	padding: 0;
 }
 
-
+.pf_detail_article {
+	max-width: 960px;
+	margin: 0 auto;
+}
+h3.pf_detail_title {
+    text-align: center;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	padding: 0;
+}
+.pf_detail_article p{
+	text-align: left;
+	margin: 0 auto;
+	padding: 0;
+}
