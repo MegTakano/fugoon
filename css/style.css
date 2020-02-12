@@ -390,8 +390,9 @@ footer p {
 		background-color: skyblue;
 	}
 	header h1.header_logo {
-		margin: 15px auto 10px auto;
-		font-size: 20px;
+/*		margin: 15px auto 10px auto;
+		font-size: 20px;*/
+		display: none;
 	}
 	/*  top max559px  */
 	h1.top_logo {
@@ -419,6 +420,9 @@ footer p {
   width: 30px;
   height: 22px;
   vertical-align: middle;
+	margin-top: 20px;
+/*	margin-right: 30px;*/
+	margin-left: 30px;
 }
 /*ハンバーガーアイコン*/
 #nav-open span, #nav-open span:before, #nav-open span:after {
@@ -462,7 +466,7 @@ footer p {
   height: 100%;
   background: #fff;/*背景色*/
   transition: .3s ease-in-out;/*滑らかに表示*/
-  -webkit-transform: translateX(-105%);
+  -webkit-transform: translateX(-105%);/*-105%*/
   transform: translateX(-105%);/*左に隠しておく*/
 }
 
