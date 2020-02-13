@@ -3,9 +3,10 @@
 
 .portfolio3_contents {
 	width: 100vw;
-	height: 110vh;
+	height: auto;
+	background-color: hotpink;
 }
-.swiper-container {
+/*.swiper-container {
 	width: 100vw;
 	height: 100vh;
 	background-color: #303030;
@@ -25,7 +26,19 @@
 	margin: 0 auto;
 	padding: 0;
 }
+*/
+.portfolio3_img {
+	text-align: center;
+	margin-top: 84px;
+	margin-bottom: 0;
+}
 
+.portfolio3_img img{
+	width: 80vw;
+	height: auto;
+	margin: 0 auto;
+	padding: 0;
+}
 .pf_detail_article {
 	max-width: 960px;
 	margin: 0 auto;
