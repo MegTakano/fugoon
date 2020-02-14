@@ -4,7 +4,6 @@
 .portfolio3_contents {
 	width: 100vw;
 	height: auto;
-	background-color: hotpink;
 }
 /*.swiper-container {
 	width: 100vw;
@@ -31,6 +30,7 @@
 	text-align: center;
 	margin-top: 84px;
 	margin-bottom: 0;
+	background-color: rgba(255,255,255,0);
 }
 
 .portfolio3_img img{
