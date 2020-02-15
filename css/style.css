@@ -319,13 +319,12 @@ article.contact_p {
 footer {
 	width: 100vw;
     height: 100px;
-	margin: 0;
+	margin: 50px auto;
 	padding: 0;
 	background-color: #000000;
+    text-align: center;
 }
 footer p {
-	margin: 50px auto;
-	text-align: center;
 	color: #fff;
 	/*background-color:tomato;*/
 }
