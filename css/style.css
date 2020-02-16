@@ -319,15 +319,17 @@ article.contact_p {
 footer {
 	width: 100vw;
     height: 100px;
-	margin: 50px auto;
+	/*margin: 50px auto 0 auto;*/
 	padding: 0;
 	background-color: #000000;
     text-align: center;
 }
-footer p {
+footer p{
+	margin: 50px auto;
 	color: #fff;
-	/*background-color:tomato;*/
+	background-color:tomato;
 }
+
 
 /*===== responsive design =====*/
 /*===== for iPad 　min560px - max960px =====*/
