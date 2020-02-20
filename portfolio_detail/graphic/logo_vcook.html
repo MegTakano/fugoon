@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="auther" content="今田萌美/Megumi Imada">
+<meta name="description" content="This is Megumi Imada's web site.">
+<meta name="keyword" content="WEB designer, Illustrator, UI designer, Graphic designer, Portfolio, design, illustration">
+
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<link rel="stylesheet" type="text/css" href="../../css/portfolio_detail.css">
+
+<!--  jQuery  -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script>
+$(function(){
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+	
+<!--slider読み込み-->
+<link rel="stylesheet" href="swiper-5.3.0/swiper-5.3.0/package/css/swiper.min.css">
+<script src="swiper-5.3.0/swiper-5.3.0/package/js/swiper.min.js"></script>
+<!--slider読み込み　ここまで-->
+	
+<title>Meg Imada-Portfolio Site</title>
+</head>
+
+<body>
+<div id="container">
+
+	
+	
+ <div id="header_fixed">
+  <header>
+	  <h1 class="header_logo"><a title="meg Imada" href="https://fugoon.com">Meg Imada</a></h1>
+	  <div id="nav-drawer">
+		  <input id="nav-input" type="checkbox" class="nav-unshown">
+		  <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+	  <nav class="header_list">
+	   <ul>
+		  <li><a title="portfolio" href="index.html#portfolio">Portfolio</a></li>
+		  <li><a title="about" href="about.html">About</a></li>
+		  <li><a title="contact" href="contact.html">Contact</a></li>
+	   </ul>
+	  </nav>
+	  </div>
+  </header>
+  </div>
+
+	
+	<!--　/*Slide show*/-->
+<div class="portfolio3_contents">
+<div class="portfolio3_img"><img src="../../image/portfolio_detail/graphic/logo_vcook_1.jpg" alt=""></div> 
+<div class="portfolio3_img"><img src="../../image/portfolio_detail/graphic/logo_vcook_2.jpg" alt=""></div> 
+</div>
+
+<!--　/*Slide showここまで*/-->
+<!--Textここから-->
+<article class="pf_detail_article">
+	<h3 class="pf_detail_title">レシピサイト『v-cook』のロゴ</h3>
+	<p>グラフィックの練習で作成したものになります。<br>
+		男女問わずヴィーガンとして生活する人に向けた、優しさを感じるデザインを目指しました。<br><br>
+		以下、デザイン面で意識した点です。<br><br>
+＜シンボルマーク＞<br>
+コックの帽子をかぶった子供で「料理・レシピサイト感」、アスパラガスとにんじんで「野菜レシピが多い（ベジタリアン・ヴィーガン向け感）」を表現しました。<br>
+<br>
+＜タイポ＞<br>
+ヴィーガン向けのサイト→野菜料理のレシピがメイン、という連想からVをグリーンに。<br>
+また、Vの字をレ点チェックの形に近づけてみて「気になるレシピをチェックする」「おいしい料理を作って『いいね！』とチェックする」といった意味合いをつけてみました。<br>
+また、V・C・Kの先端部分を線の進行方向に対して直角にカットすることで、女性向けっぽい丸みを帯びたかわいさとは違った「（男女問わず）小さい子供が遊ぶオモチャのようなかわいさ」を出してみました。<br>
+<br>
+＜色＞<br>
+V以外の文字や線を黒に近いブラウンにして優しい印象にしました。<br></p>
+	</article>
+
+</div>
+<!--Textここまで-->
+ 
+	<section id="footer">
+	  <footer>
+      	<p><small>&copy;Meg Imada</small></p>
+	  </footer>
+</section>
+ 
+</div>
+
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    loop: true,
+//    autoplay: {
+//        delay: 2000,
+//        disableOnInteraction: false,
+//      },
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true
+	}
+  });
+</script>
+</body>
+</html>
