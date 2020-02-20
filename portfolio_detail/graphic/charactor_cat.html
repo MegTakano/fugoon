@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="auther" content="今田萌美/Megumi Imada">
+<meta name="description" content="This is Megumi Imada's web site.">
+<meta name="keyword" content="WEB designer, Illustrator, UI designer, Graphic designer, Portfolio, design, illustration">
+
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<link rel="stylesheet" type="text/css" href="../../css/portfolio_detail.css">
+
+<!--  jQuery  -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script>
+$(function(){
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+	
+<!--slider読み込み-->
+<link rel="stylesheet" href="swiper-5.3.0/swiper-5.3.0/package/css/swiper.min.css">
+<script src="swiper-5.3.0/swiper-5.3.0/package/js/swiper.min.js"></script>
+<!--slider読み込み　ここまで-->
+	
+<title>Meg Imada-Portfolio Site</title>
+</head>
+
+<body>
+<div id="container">
+
+	
+	
+ <div id="header_fixed">
+  <header>
+	  <h1 class="header_logo"><a title="meg Imada" href="https://fugoon.com">Meg Imada</a></h1>
+	  <div id="nav-drawer">
+		  <input id="nav-input" type="checkbox" class="nav-unshown">
+		  <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+	  <nav class="header_list">
+	   <ul>
+		  <li><a title="portfolio" href="index.html#portfolio">Portfolio</a></li>
+		  <li><a title="about" href="about.html">About</a></li>
+		  <li><a title="contact" href="contact.html">Contact</a></li>
+	   </ul>
+	  </nav>
+	  </div>
+  </header>
+  </div>
+
+	
+	<!--　/*Slide show*/-->
+<div class="portfolio3_contents">
+<div class="portfolio3_img"><img src="../../image/portfolio_detail/graphic/Charactor design_cat.jpg" alt=""></div> 
+</div>
+
+<!--　/*Slide showここまで*/-->
+<!--Textここから-->
+<article class="pf_detail_article">
+	<h3 class="pf_detail_title">猫のキャラクターデザイン</h3>
+	<p>グラフィックの練習で作成したものになります。<br>
+		架空の猫の預かりサービス「NyanCoco」に愛着を持ってもらい、利用者を増やすことを目的にキャラクターデザインを考えました。<br><br>
+		以下、デザイン面で意識した点です。<br><br>
+＜デザイン＞<br>
+最近のトレンドである線を極力使わないフラットなイラストに仕上げました。<br>
+かわいらしさを出すために、目や口元の位置を顔の中心よりやや下に置く、コロンとした丸みのあるデザインにするなどの工夫をしました。<br>
+<br>
+＜名前＞<br>
+Rell（リル）とLax（ラックス）です。<br>
+猫たちが預けられる、ご主人さまの帰りを待つ…といったネガティブな感じではなく、猫たちがくつろぐために自ら進んで施設を利用しているような意味合いを持たせるために、「Relax」を２つに分けたような名前にしてみました。<br></p>
+	</article>
+
+</div>
+<!--Textここまで-->
+ 
+	<section id="footer">
+	  <footer>
+      	<p><small>&copy;Meg Imada</small></p>
+	  </footer>
+</section>
+ 
+</div>
+
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    loop: true,
+//    autoplay: {
+//        delay: 2000,
+//        disableOnInteraction: false,
+//      },
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true
+	}
+  });
+</script>
+</body>
+</html>
