@@ -333,9 +333,9 @@ footer p{
 /*===== responsive design =====*/
 /*===== for iPad 　min560px - max960px =====*/
 @media screen and (max-width: 959px) {
-	body{
+/*	body{
 		background-color:tomato;
-	}
+	}*/
 	/*  header min560px-max960px  */
 
 	/*  top min560px-max960px  */
@@ -386,9 +386,9 @@ footer p{
 
 /*===== for Smartphone =====*/
 @media screen and (max-width: 559px) {
-	body {
+/*	body {
 		background-color: skyblue;
-	}
+	}*/
 	header h1.header_logo {
 /*		margin: 15px auto 10px auto;
 		font-size: 20px;*/
